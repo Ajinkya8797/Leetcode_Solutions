@@ -1,9 +1,11 @@
 package java_leetcode_solutions;
 
-/** 09 - Palindrome Number */
+/**
+ * @author AjinkyaL Java Solution for LeetCode Problem #09 - Palindrome Number
+ */
 
-public class Palindrome {
-	public boolean isPalindrome(int x) {
+public class LeetCode09 {
+	public static boolean isPalindrome(int x) {
         if (x < 0) {
             return false;
         }
@@ -21,12 +23,11 @@ public class Palindrome {
     }
 
 	public static void main(String[] args) {
-		Palindrome sol = new Palindrome();
-
+		
         int[] testCases = {121, -121, 10};
 
         for (int x : testCases) {
-            System.out.println("Is " + x + " a palindrome? " + sol.isPalindrome(x));
+            System.out.println("Is " + x + " a palindrome - " + LeetCode09.isPalindrome(x));
         }
 
 	}
